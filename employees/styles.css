@@ -1,0 +1,60 @@
+body {
+    max-width: none;
+}
+
+table {
+    margin: 40px auto;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    cursor: pointer;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+input, select {
+    width: 100%;
+}
+
+label {
+    font-size: larger;
+}
+
+label, input {
+    margin: 5px auto;
+    display: inline-block;
+}
+
+.inputPadding {
+    display: block;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#formButton {
+    width: 50%;
+    display: block;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 7px;
+}
+
+#supervisorInput {
+    display: none;
+}
+
+.invalidInput {
+    color: darkred;
+}
