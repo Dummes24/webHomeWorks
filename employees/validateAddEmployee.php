@@ -41,7 +41,7 @@ function validateEmployeePOST($supervisors)
             }
         }
 
-        //Source: https://github.com/4iz278/cviceni/blob/c1cb132b47b077ea95d3ac7ac02692dee641cb24/04-objekty-II-validace/04-priklad-validace/formular.php#L16
+        //Source (Edited): https://github.com/4iz278/cviceni/blob/c1cb132b47b077ea95d3ac7ac02692dee641cb24/04-objekty-II-validace/04-priklad-validace/formular.php#L16
         //Don't reinvent the wheel ^^
         if (!empty($_POST['phone'])) {
             //odstraníme z telefonu nadbytečné znaky
@@ -51,6 +51,7 @@ function validateEmployeePOST($supervisors)
                 $errors['phone'] = 'Musíte zadat platné české telefonní číslo, nebo ponechte toto pole prázdné.';
             }
         }
+
         if (!empty($_POST['email']) && !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
             $errors['email'] = 'Musíte zadat platný e-mail.';
         }
