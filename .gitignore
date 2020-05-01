@@ -1,0 +1,5 @@
+.ssh/
+/board/inc/db.php
+/eshop/db.php
+/nastenka-uzivatele/inc/db.php
+*/db.php
